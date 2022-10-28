@@ -334,32 +334,9 @@
         column-gap: 9px;
     }
 
-    .header-menu__dropdown {
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
+    .nav__list>li:hover .header-menu__dropdown {
+        opacity: 0;
     }
-
-    /* .dropdown_col_one {
-        margin-right: 0px;
-        width: 100%;
-    }
-    .dropdown_col_two {
-        margin-right: 0px;
-        width: 100%;
-    }
-    .dropdown_col_three {
-        margin-right: 0px;
-        width: 100%;
-    }
-    .dropdown_col_four {
-        margin-right: 0px;
-        width: 100%;
-    }
-    
-    .dropdown_col_five {
-        width: 100%;
-    }  */
 
     .products-section {
         padding: 0px 15px;
