@@ -19,10 +19,12 @@
     <meta name="og:title" content="E-comm" />
     <meta name="og:description" content="E-comm - online shoes store" />
     <meta name="og:type" content="article" />
-    <meta name="og:image" content="./img/PromotionImage.png" />
+    <meta name="og:image" content="./img/PromotionImage-min.png" />
     <meta property="og:image:width" content="350" />
     <meta property="og:image:height" content="200" />
     <meta property="og:image:alt" content="selector" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style/reset.css">
 
@@ -31,15 +33,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap" rel="stylesheet">
     
-
     <link rel="stylesheet" href="./style/custom.css">
     <link rel="stylesheet" href="./style/media.css">
 </head>
 <body>
     <header>
-        <div class="header-container header-menu">
-            <div class="header-menu__top">
-                <div class="header-menu__language-select">
+        <div class="header">
+            <div class="menu-top">
+                <div class="menu-top__language">
                     <select class="change-lang" name="lang" id="lang">
                         <option selected value="EN">EN</option>
                         <option value="DE">DE</option>
@@ -64,19 +65,73 @@
             <div class="header-menu__bottom">
                 <div class="header-menu__logo">
                     <a href="./index.html" class="logo">
-                        <img src="./img/logo.svg" alt="E-comm logo"/>
+                        <img src="./img/logo.svg" alt="E-Comm logo"/>
                     </a>
-                    <a href="./index.html" class="logo-text">E-comm</a>
+                    <a href="./index.html" class="logo-text">E-Comm</a>
                 </div>
                 <div class="header-menu__nav">
-                    <nav class="nav">
+                    <nav id="nav" class="nav">
                         <ul class="nav__list">
-                            <li><a href="#" class="nav__list__item">home</a></li>
+                            <li><a href="#" class="nav__list__item">home</a>
+                                <div class="header-menu__dropdown">
+                                    <div class="dropdown_col_one">
+                                        <h4>Category</h4>
+                                        <ul>
+                                            <li><a href="#">Coporate Shoes</a></li>
+                                            <li><a href="#">Sneakers</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Sport Shoe</a></li>
+                                            <li><a href="#">Trainers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown_col_two">
+                                        <ul>
+                                            <li><a href="#">Coporate Shoes</a></li>
+                                            <li><a href="#">Sneakers</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Sport Shoe</a></li>
+                                            <li><a href="#">Trainers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown_col_three">
+                                        <h4>Category</h4>
+                                        <ul>
+                                            <li><a href="#">HOT DEAL</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Belts</a></li>
+                                            <li><a href="#">Handbags</a></li>
+                                            <li><a href="#">Sneakers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown_col_four">
+                                        <ul>
+                                            <li><a href="#">HOT DEAL</a></li>
+                                            <li><a href="#">Sunglasses</a></li>
+                                            <li><a href="#">Belts</a></li>
+                                            <li><a href="#">Handbags</a></li>
+                                            <li><a href="#">Sneakers</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown_col_five">
+                                        <h4>Category</h4>
+                                        <ul>
+                                            <li><a href="#">Coporate Shoes</a></li>
+                                            <li><a href="#">Sneakers</a></li>
+                                            <li><a href="#">Sandals</a></li>
+                                            <li><a href="#">Sport Shoe</a></li>
+                                            <li><a href="#">Trainers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                             <li><a href="#" class="nav__list__item">bags</a></li>
                             <li><a href="#" class="nav__list__item">sneakers</a></li>
                             <li><a href="#" class="nav__list__item">belt</a></li>
                             <li><a href="#" class="nav__list__item">contact</a></li>
                         </ul>
+                        <button id="nav-btn" class="nav-button">
+                            <img id="nav-btn-img" src="./img/menu-open.png" alt="Nav button"/>
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -85,33 +140,608 @@
     <main>
         <section>
             <div class="promotion-banner">
+                <div class="promotion-banner__inner">
+                    <h1 class="promotion-banner__heading">Super Flash Sale 50% Off</h1>
+                </div>
             </div>
         </section>
         <section>
-            <div class="sale-items"></div>
+            <div class="sale-container">
+                <div class="sale-block">
+                    <div class="sale-block__item">
+                        <img src="./img/imageProduct-bag-min.png" class="sale-block__img" alt="product image"/>
+                        <h3 class="sale-block__hstyle sale-block__bag-position">fs - quilted maxi cross bag</h3>
+                        <div class="sale-block__design bag-position">
+                            <span class="sale-block__old-price">$534,33</span>
+                            <p>24% Off</p>
+                        </div>
+                        <span class="sale-block__new-price new-price-position">$299,43</span>
+                    </div>
+                    <div class="sale-block__item">
+                        <img src="./img/imageProduct-min.png" class="sale-block__img" alt="product image"/>
+                        <h3 class="sale-block__hstyle sale-block__product-position">FS - Nike Air Max 270 React...</h3>
+                        <div class="sale-block__design sneaker-position">
+                            <span class="sale-block__old-price">$534,33</span>
+                            <p>24% Off</p>
+                        </div>
+                        <span class="sale-block__new-price new-price-place">$299,43</span>
+                    </div>
+                    <div class="sale-block__item">
+                        <img src="./img/imageProduct-section-min.png" class="sale-block__img" alt="product image"/>
+                        <h3 class="sale-block__hstyle sale-block__placement">FS - Nike Air Max 270 React...</h3>
+                        <div class="sale-block__design another-sneaker-position">
+                            <span class="sale-block__old-price">$534,33</span>
+                            <p>24% Off</p>
+                        </div>
+                        <span class="sale-block__new-price new-price-location">$299,43</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
-            <div class="best-section"></div>
+            <div class="container ">
+                <div class="tabs-container">
+                    <h2 class="title">best seller</h2>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="tab-controls" id="all-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All</button>
+                        </li>
+                        <li class="" role="presentation">
+                        <button class="tab-controls" id="bags-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Bags</button>
+                        </li>
+                        <li class="" role="presentation">
+                        <button class="tab-controls" id="sneaker-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Sneakers</button>
+                        </li>
+                        <li class="" role="presentation">
+                        <button class="tab-controls" id="belt-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Belt</button>
+                        </li>
+                        <li class="" role="presentation">
+                        <button class="tab-controls" id="sunglasses-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Sunglasses</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="row row_mrgin">
+                            <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card__img" src="./img/cardProduct-min.png" alt="">
+                                <div class="hover-block">
+                                    <div class="buttons-cover">
+                                        <button>
+                                            <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/>
+                                            </svg>
+                                        </button>
+                                        <button>
+                                            <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p class="card__item-name">Nike Air Max 270 React</p>
+                                        <div class="simple-rating">
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy-gray.svg" alt=""/>
+                                        </div>
+                                        <div>
+                                            <span class="card__new-price">$299,43</span>
+                                            <span class="card__old-price">$534,33</span>
+                                            <span class="card__discount">24% Off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card__img card__img-darker card-img-top" src="./img/imageBagRedProduct-min.png" alt="">
+                                <div class="hover-block">
+                                    <div class="buttons-cover">
+                                        <button>
+                                            <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/>
+                                            </svg>
+                                        </button>
+                                        <button>
+                                            <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p class="card__item-name">Nike Air Max 270 React</p>
+                                        <div class="simple-rating">
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy-gray.svg" alt=""/>
+                                        </div>
+                                        <div>
+                                            <span class="card__new-price">$299,43</span>
+                                            <span class="card__old-price">$534,33</span>
+                                            <span class="card__discount">24% Off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card__img" src="./img/imageBagNeigeProduct-min.png" alt="">
+                                <div class="hover-block">
+                                    <div class="buttons-cover">
+                                        <button>
+                                            <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/>
+                                            </svg>
+                                        </button>
+                                        <button>
+                                            <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p class="card__item-name">Nike Air Max 270 React</p>
+                                        <div class="simple-rating">
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy-gray.svg" alt=""/>
+                                        </div>
+                                        <div>
+                                            <span class="card__new-price">$299,43</span>
+                                            <span class="card__old-price">$534,33</span>
+                                            <span class="card__discount">24% Off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card__img" src="./img/imageNikeProduct-min.png" alt="">
+                                <div class="hover-block">
+                                    <div class="buttons-cover">
+                                        <button>
+                                            <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/>
+                                            </svg>
+                                        </button>
+                                        <button>
+                                            <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                                </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-text">
+                                        <p class="card__item-name">Nike Air Max 270 React</p>
+                                        <div class="simple-rating">
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy-gray.svg" alt=""/>
+                                        </div>
+                                        <div>
+                                            <span class="card__new-price">$299,43</span>
+                                            <span class="card__old-price">$534,33</span>
+                                            <span class="card__discount">24% Off</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card__img" src="./img/ProductNikeBottomPicture02-min.png" alt="">
+                                    <div class="hover-block">
+                                        <div class="buttons-cover">
+                                            <button>
+                                                <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/>
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                                    </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p class="card__item-name">Nike Air Max 270 React</p>
+                                            <div class="simple-rating">
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy-gray.svg" alt=""/>
+                                            </div>
+                                            <div>
+                                                <span class="card__new-price">$299,43</span>
+                                                <span class="card__old-price">$534,33</span>
+                                                <span class="card__discount">24% Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card__img" src="./img/ProductNikeYellowPicture03-min.png" alt="">
+                                    <div class="hover-block">
+                                        <div class="buttons-cover">
+                                            <button>
+                                                <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/>
+                                                </svg>
+                                            </button>
+                                            <button>
+                                                <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                                    </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p class="card__item-name">Nike Air Max 270 React</p>
+                                            <div class="simple-rating">
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy-gray.svg" alt=""/>
+                                            </div>
+                                            <div>
+                                                <span class="card__new-price">$299,43</span>
+                                                <span class="card__old-price">$534,33</span>
+                                                <span class="card__discount">24% Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card__img" src="./img/ProductYellowBackPicture01-min.png" alt="">
+                                    <div class="hover-block">
+                                        <div class="buttons-cover">
+                                            <button>
+                                                <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/></svg>
+                                            </button>
+                                            <button>
+                                                <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                                    </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p class="card__item-name">Nike Air Max 270 React</p>
+                                            <div class="simple-rating">
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                                <img src="./img/star-copy-gray.svg" alt=""/>
+                                            </div>
+                                            <div>
+                                                <span class="card__new-price">$299,43</span>
+                                                <span class="card__old-price">$534,33</span>
+                                                <span class="card__discount">24% Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card__img" src="./img/imageNikeProduct-min.png" alt="">
+                                    <div class="hover-block">
+                                    <div class="buttons-cover">
+                                        <button>
+                                            <svg width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8221 2.96101C13.466 2.96167 14.0959 3.14815 14.6363 3.49812C15.1768 3.84808 15.6046 4.34662 15.8686 4.93385C16.1326 5.52107 16.2215 6.17205 16.1246 6.80854C16.0276 7.44504 15.749 8.03998 15.3221 8.52198C14.7091 9.21298 9.48217 14.106 9.48217 14.106C9.48217 14.106 4.24415 9.21299 3.63115 8.51099C3.08996 7.90353 2.79224 7.11759 2.79516 6.30402C2.81032 5.42729 3.16923 4.59153 3.79461 3.97688C4.41998 3.36222 5.26179 3.01783 6.13866 3.01783C7.01553 3.01783 7.85728 3.36222 8.48266 3.97688C9.10803 4.59153 9.467 5.42729 9.48217 6.30402C9.48217 5.86488 9.56863 5.43001 9.73668 5.0243C9.90474 4.61859 10.1511 4.24998 10.4616 3.93946C10.7721 3.62894 11.1407 3.3826 11.5464 3.21455C11.9522 3.0465 12.387 2.96003 12.8262 2.96003L12.8221 2.96101ZM12.8262 0.731027C11.6199 0.728922 10.4458 1.12038 9.48217 1.84602C8.37821 1.02663 7.0103 0.644208 5.64147 0.772286C4.27263 0.900364 2.99943 1.52991 2.06664 2.53986C1.13385 3.54982 0.607294 4.86892 0.588185 6.2436C0.569077 7.61828 1.05876 8.95151 1.96312 9.98701C2.58912 10.705 6.71212 14.565 7.96312 15.731C8.37604 16.1172 8.9203 16.332 9.48565 16.332C10.051 16.332 10.5952 16.1172 11.0081 15.731C12.2521 14.566 16.3581 10.716 16.9921 9.99903C17.7034 9.1955 18.1677 8.20367 18.329 7.14271C18.4903 6.08175 18.3419 4.99677 17.9015 4.01814C17.4611 3.0395 16.7475 2.20879 15.8465 1.62586C14.9455 1.04293 13.8953 0.732552 12.8221 0.732003L12.8262 0.731027Z"/>
+                                            </svg>
+                                        </button>
+                                        <button>
+                                            <svg width="18" height="19" viewBox="0 0 18 19"  xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4402 12.878C14.9543 12.8773 15.4522 12.6982 15.849 12.3715C16.2458 12.0447 16.517 11.5904 16.6163 11.086L17.7313 5.513C17.7958 5.19002 17.788 4.85671 17.7084 4.53711C17.6288 4.21751 17.4793 3.91955 17.2707 3.66461C17.0622 3.40968 16.7997 3.20412 16.5022 3.06274C16.2048 2.92137 15.8796 2.84769 15.5503 2.84698H4.45025V1.73199C4.44998 1.43714 4.33296 1.15439 4.12475 0.945618C3.91654 0.736845 3.6341 0.619039 3.33925 0.617981H1.12426C0.834452 0.626663 0.559425 0.747871 0.357503 0.955933C0.155581 1.16399 0.042653 1.44255 0.042653 1.73248C0.042653 2.02242 0.155581 2.30097 0.357503 2.50903C0.559425 2.7171 0.834452 2.8383 1.12426 2.84698H2.23925V13.992C1.79797 13.99 1.36603 14.1191 0.998158 14.3628C0.630288 14.6065 0.343053 14.9539 0.17281 15.361C0.00256826 15.7681 -0.0430143 16.2166 0.0418595 16.6497C0.126733 17.0827 0.338227 17.4808 0.649556 17.7936C0.960885 18.1063 1.35805 18.3196 1.7907 18.4064C2.22335 18.4932 2.67204 18.4497 3.07992 18.2812C3.48779 18.1128 3.83653 17.8272 4.0819 17.4604C4.32727 17.0936 4.45824 16.6623 4.45824 16.221H12.2243C12.226 16.6597 12.3577 17.088 12.6027 17.4519C12.8478 17.8158 13.1951 18.0989 13.6009 18.2656C14.0067 18.4322 14.4528 18.4749 14.8828 18.3882C15.3129 18.3016 15.7076 18.0894 16.0172 17.7786C16.3267 17.4677 16.5373 17.0722 16.6222 16.6418C16.7072 16.2114 16.6627 15.7655 16.4944 15.3604C16.3261 14.9552 16.0416 14.609 15.6767 14.3655C15.3118 14.1219 14.883 13.992 14.4443 13.992H4.45726V12.878H14.4402ZM15.5553 5.078L14.4402 10.651H4.45324V5.078H15.5532H15.5553Z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                    <div class="card-body">
+                                        <div class="card-text">
+                                            <p class="card__item-name">Nike Air Max 270 React</p>
+                                            <div class="simple-rating">
+                                                <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy.svg" alt=""/>
+                                            <img src="./img/star-copy-gray.svg" alt=""/>
+                                            </div>
+                                            <div>
+                                                <span class="card__new-price">$299,43</span>
+                                                <span class="card__old-price">$534,33</span>
+                                                <span class="card__discount">24% Off</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab__load-more-link">
+                            <a href="#" class="tab__load-more">load more</a>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
-            <div class="middle-banner"></div>
+            <div class="middle-banner">
+                <div class="middle-banner__inner">
+                    <h2 class="middle-banner__heading">Adidas Men Running Sneakers</h2>
+                    <p class="middle-banner__descript">Performance and design. Taken right to the edge.</p>
+                    <a href="#" class="middle-banner__shop-link">shop now</a>
+                </div>
+                <img class="middle-banner__item" src="./img/shoes-shoe-png-transparent-min.png" alt="Adidas Men Sneakers"/>
+                
+            </div>
         </section>
         <section>
-            <div class="services"></div>
+            <div class="services-container">
+                <div class="services">
+                    <div class="services__description">
+                        <div class="services__description-style services__description__shipping">
+                            <img class="services__description__shipping-img" src="./img/free-shipping.svg" alt=""/>
+                            <h3>free shipping</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="services__description-style services__description__refund">
+                            <img class="services__description__refund-img" src="./img/refund.svg" alt=""/>
+                            <h3>100% refund</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="services__description-style services__description__support">
+                            <img class="services__description__support-img" src="./img/support.svg" alt=""/>
+                            <h3>support 24/7</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
-            <div class="news-section"></div>
+            <div class="news-container">
+                <h2 class="title">latest news</h2>
+                <div class="latest-news-row">
+                    <div class="latest-news-col">
+                        <img class="latest-news-col__log-nike" src="./img/Nike_logo.svg" alt=""/>
+                        <div class="latest-news-col__details">
+                            <p class="latest-news-col__date">01 Jan, 2015</p>
+                            <h3>Fashion Industry</h3>
+                            <p class="latest-news-col__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="latest-news-col">
+                        <img class="latest-news-col__log-figma" src="./img/figma-1-logo.svg" alt=""/>
+                        <div class="latest-news-col__details">
+                            <p class="latest-news-col__date">01 Jan, 2015</p>
+                            <h3>Best Design Tools</h3>
+                            <p class="latest-news-col__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="latest-news-col">
+                        <img class="latest-news-col__log-kronos" src="./img/kronos-logo.svg" alt=""/>
+                        <div class="latest-news-col__details">
+                            <p class="latest-news-col__date">01 Jan, 2015</p>
+                            <h3>HR Community</h3>
+                            <p class="latest-news-col__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="products-section">
+                <h2 class="title">featured products</h2>
+                <div class="featured-products-row">
+                    <div class="featured-products-col">
+                        <img src="./img/featured-prod-min.png" alt=""/>
+                        <div class="featured-products-col__right">
+                            <h4>Blue Swade Nike Sneakers</h4>
+                            <div class="featured-products__rating">
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy-gray.svg" alt=""/>
+                            </div>
+                            <div class="featured-products__prices">
+                                <span class="featured-products__new-price">$499</span>
+                                <span class="featured-products__old-price">$599</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-col">
+                        <img src="./img/featured-prod-min.png" alt="">
+                        <div class="featured-products-col__right">
+                            <h4>Blue Swade Nike Sneakers</h4>
+                            <div class="featured-products__rating">
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy-gray.svg" alt=""/>
+                            </div>
+                            <div class="featured-products__prices">
+                                <span class="featured-products__new-price">$499</span>
+                                <span class="featured-products__old-price">$599</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-products-col">
+                        <img src="./img/featured-prod-min.png" alt="">
+                        <div class="featured-products-col__right">
+                            <h4>Blue Swade Nike Sneakers</h4>
+                            <div class="featured-products__rating">
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy.svg" alt=""/>
+                                <img src="./img/star-copy-gray.svg" alt=""/>
+                            </div>
+                            <div class="featured-products__prices">
+                                <span class="featured-products__new-price">$499</span>
+                                <span class="featured-products__old-price">$599</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__search-form">
+                    <label><input type="text" placeholder="Search query..."></label>
+                    <button class="products__btn-search">Search</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <div class="footer-upper">
-            <div class="footer-upper__about"></div>
-        </div>
-        <div class="footer-middle">
-            <div class="footer-middle__navigation">
-
+        <div class="footer-container">
+            <div class="footer-upper">
+                <div class="footer-upper__about">
+                    <div class="footer-upper__logo">
+                        <div class="footer-upper__logo-wrap">
+                            <a href="./index.html" class="logo">
+                                <img src="./img/logo.svg" alt="E-comm logo"/>
+                            </a>
+                            <a href="./index.html" class="logo-text">E-Comm</a>
+                        </div>
+                        <p class="footer-upper__logo-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+                    </div>
+                    <div class="footer-upper__networks">
+                        <h4>Follow Us</h4>
+                        <p class="footer-upper__networks__text">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                        <div class="footer-upper__networks-icons">
+                            <a href="#"><img src="./img/facebook.svg" alt="facebook logo"/></a>
+                            <a href="#"><img src="./img/twitter.svg" alt="twitter logo"/></a>
+                        </div>
+                    </div>
+                    <div class="footer-upper__address">
+                        <h4>Contact Us</h4>
+                        <address>E-Comm , 4578 Marmora Road, Glasgow D04 89GR</address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <div class="footer-middle__navigation">
+                    <div class="footer-middle__info">
+                        <h4>Infomation</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Infomation </a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &#38; Conditions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-middle__service">
+                        <h4>Service</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Infomation </a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &#38; Conditions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-middle__usr-acc">
+                        <h4>My Account</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Infomation </a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &#38; Conditions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-middle__offers">
+                        <h4>Our Offers</h4>
+                        <nav>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Infomation </a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms &#38; Conditions</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__copyright">
+                    <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
+                </div>
+                <div class="footer-bottom__payments">
+                    <img src="./img/Western-union.svg" alt="payment method"/>
+                    <img src="./img/mastercard.svg" alt="payment method"/>
+                    <img src="./img/Paypal.svg" alt="payment method"/>
+                    <svg width="39" height="26" viewBox="0 0 39 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="paint0_linear_8_528" x1="19.3507" y1="25.7361" x2="19.3507" y2="0.593994" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#E59703"/>
+                            <stop offset="0.231" stop-color="#E59703"/>
+                            <stop offset="0.234" stop-color="white"/>
+                            <stop offset="0.761" stop-color="white"/>
+                            <stop offset="0.766" stop-color="#5457BB"/>
+                            <stop offset="1" stop-color="#5457BB"/>
+                            </linearGradient>
+                            </defs>
+                        <path d="M1.85069 0.593994H36.8507C37.074 0.598285 37.2943 0.646599 37.499 0.736084C37.7037 0.825569 37.8887 0.95444 38.0436 1.11548C38.1984 1.27652 38.3199 1.46651 38.4012 1.67456C38.4826 1.88261 38.5222 2.10454 38.5177 2.32788V24.0022C38.5222 24.2255 38.4826 24.4475 38.4012 24.6555C38.3199 24.8636 38.1984 25.0536 38.0436 25.2146C37.8887 25.3756 37.7037 25.5045 37.499 25.594C37.2943 25.6835 37.074 25.7318 36.8507 25.7361H1.85069C1.62734 25.7318 1.40705 25.6835 1.20237 25.594C0.997693 25.5045 0.812634 25.3756 0.657818 25.2146C0.503001 25.0536 0.381384 24.8636 0.300029 24.6555C0.218675 24.4475 0.179188 24.2255 0.183696 24.0022V2.32788C0.179188 2.10454 0.218675 1.88261 0.300029 1.67456C0.381384 1.46651 0.503001 1.27652 0.657818 1.11548C0.812634 0.95444 0.997693 0.825569 1.20237 0.736084C1.40705 0.646599 1.62734 0.598285 1.85069 0.593994Z" fill="url(#paint0_linear_8_528)"/>
+                        <svg x="6" y="9" width="28" height="9" viewBox="0 0 28 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.1555 8.82007L24.9036 7.52515H22.1696L21.7206 8.82007H19.4785L22.6855 0.755127C22.7601 0.555136 22.8968 0.384108 23.0754 0.267334C23.2541 0.15056 23.4655 0.0942403 23.6786 0.106201H25.4076L27.1295 8.82104L25.1555 8.82007ZM23.9196 2.47583L22.7896 5.73706H24.5555L23.9196 2.47583ZM16.6326 2.59009C16.6326 3.54209 19.6326 3.74581 19.6326 5.93481C19.6326 8.04281 17.4176 8.81812 15.9506 8.81812C15.1168 8.8319 14.2895 8.66963 13.5226 8.34204L13.8425 6.4519C14.7225 7.1719 17.3916 7.37713 17.3916 6.23413C17.3916 5.09113 14.4166 5.06394 14.4166 2.88794C14.4166 0.575939 16.9506 0.0998535 18.0166 0.0998535C18.6769 0.116781 19.33 0.240912 19.9506 0.467041L19.6436 2.27612C18.7256 1.76412 16.6306 1.64199 16.6306 2.59399L16.6326 2.59009ZM10.0486 8.82007L11.3926 0.104736H13.5436L12.1996 8.82007H10.0486ZM4.8916 8.82007L3.02551 1.25806C3.35516 1.46395 3.66968 1.69324 3.96655 1.94409C4.86357 2.71168 5.54609 3.69857 5.94751 4.80884L6.19055 6.09985L8.24158 0.106201H10.5565L8.84552 4.46362L7.13452 8.82104L4.8916 8.82007ZM2.89758 1.17407C2.83092 1.13274 2.76418 1.09293 2.69751 1.05493C2.76151 1.09893 2.82751 1.13696 2.89551 1.17896L2.89758 1.17407ZM2.38354 0.884033C2.32554 0.854033 2.26562 0.822189 2.20862 0.794189C2.26362 0.827189 2.32259 0.858916 2.38159 0.888916L2.38354 0.884033Z" fill="#494CA3"/>
+                            <svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.94458 4.81298L5.22058 0.89501C5.18253 0.658865 5.05577 0.446167 4.86621 0.300284C4.67666 0.154401 4.43858 0.0866628 4.20056 0.110342H0.810547L0.770508 0.257315C1.94756 0.574701 3.03839 1.15217 3.96252 1.94726C4.86005 2.715 5.54303 3.70224 5.94458 4.81298Z" fill="#FFC000"/>
+                                </svg>
+                                
+                        </svg>
+                        </svg>
+                        
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>
