@@ -685,6 +685,7 @@ select {
 }
 
 .tab__load-more__link {
+    font-family: 'Poppins', sans-serif;
     position: relative;
     font-weight: 500;
     text-transform: uppercase;
