@@ -1003,7 +1003,7 @@ select {
     content: '';
     height: 1px;
     background-color: #5D656B;
-    width: 48px;
+    width: 105%;
     top: 14px;
     left: 1px;
 

@@ -1,0 +1,174 @@
+@font-face{src:url(../fonts/ProximaNova/Proxima-Nova-Font.otf)}
+body{background-color:#FFF;height:100%;overflow-x:hidden}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background-color:#FFF}
+::-webkit-scrollbar-thumb{background:#888;border-radius:15px}
+::-webkit-scrollbar-thumb:hover{background:#606060}
+.header{width:100%;max-width:1290px;margin:0 auto;display:flex;flex-direction:column;margin-top:27px}
+.menu-top{position:relative;display:flex;justify-content:space-between;align-items:flex-start;font-family:'Proxima Nova',sans-serif;padding-bottom:15px;padding-right:10px}
+.menu-top:after{content:'';position:absolute;height:2px;background:#FAFAFB;top:94%;width:100vw;margin-left:calc(50% - 50vw)}
+.menu-top__language{display:flex}
+.change-lang,.change-currency{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearance:none;outline:0;border:none;box-shadow:none;font-weight:400;font-size:20px;line-height:24px;color:#262626;cursor:pointer;position:relative}
+select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.change-lang{background:url(../img/arrow-down.svg) 100% 50% no-repeat;padding-right:10px;margin-right:13px;border-radius:0;background-color:transparent}
+.change-currency{background:url(../img/arrow-down.svg) 100% 50% no-repeat;padding-right:10px}
+.change-lang option{box-shadow:none;background-color:#FFF;padding:20px}
+.header-menu__tools{display:flex;align-items:flex-start;column-gap:33px;padding-right:22px}
+.my-profile{position:relative}
+.my-profile:before{content:'';background-image:url(../img/profile_close_2.svg);position:absolute;width:21px;height:20px;top:7%;right:108%}
+.website-search{display:flex;column-gap:8px}
+.cart{position:relative}
+.cart::after{content:'2';position:absolute;bottom:52%;left:15px;font-family:'Poppins',sans-serif;font-weight:700;font-size:10px;line-height:15px;letter-spacing:.5px;color:#FFF;background-color:#FB7181;width:20px;height:20px;border-radius:50%;border:2px solid #fff;display:flex;justify-content:center;align-items:center}
+.tools-style{font-weight:400;font-size:20px;line-height:24px;color:#262626}
+.total-amount{font-family:'Proxima Nova',sans-serif;font-weight:400;font-size:20px;line-height:24px;color:#262626;opacity:.5}
+.header-menu__bottom{display:flex;align-items:center;justify-content:space-between;min-height:95px;font-family:'Poppins',sans-serif}
+.header-menu__nav{padding-right:32px}
+.header-menu__logo{display:flex;align-items:center;column-gap:6px}
+.logo-text{font-family:'Poppins',sans-serif;font-weight:700;font-size:18px;line-height:27px;color:#22262A}
+.logo-text:hover{color:#40BFFF}
+.nav__list{display:flex;column-gap:98px}
+.nav__list li .nav__list__item{font-weight:500;font-size:24px;line-height:36px;color:#262626;text-transform:uppercase}
+.nav__list li .nav__list__item:hover{color:#40BFFF}
+.nav li{position:relative}
+.nav__list>li:hover .header-menu__dropdown{opacity:1}
+.header-menu__dropdown{position:absolute;top:58px;left:-411.5%;z-index:20;background-color:#FFF;filter:drop-shadow(0px 30px 30px rgba(0,0,0,0.102));display:flex;padding:39px 33px 28px 84px;border-top:2px solid #F1F3F4;border-radius:0 0 5px 5px;transition:all 150ms ease-in-out;opacity:0}
+.header-menu__dropdown:before{content:'';position:absolute;border:10px solid transparent;border-top:10px solid #F1F3F4;transform:rotate(180deg);top:-22px;left:30%}
+.dropdown_col_one{margin-right:45px;min-width:137px}
+.dropdown_col_two{margin-right:59px;min-width:137px}
+.dropdown_col_three{margin-right:45px;min-width:137px}
+.dropdown_col_four{margin-right:79px;min-width:137px}
+.dropdown_col_five{min-width:137px}
+.header-menu__dropdown h4{font-family:'Poppins',sans-serif;font-style:normal;font-weight:500;font-size:22px;line-height:33px;color:#C1C8CE;padding-bottom:18px}
+.header-menu__dropdown ul li{padding-bottom:24px}
+.dropdown_col_two,.dropdown_col_four{margin-top:52px}
+.header-menu__dropdown ul li a{font-family:'Poppins',sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:24px;color:#262626}
+.header-menu__dropdown ul li a:hover{color:#33A0FF}
+.nav-button{display:none}
+.promotion-banner{position:relative;background:url(../img/PromotionBanner-s-min.png) no-repeat center;background-size:cover;height:653px;overflow-x:hidden}
+.promotion-banner__heading{position:absolute;width:573px;top:40%;left:100px;font-family:'Poppins',sans-serif;font-weight:700;font-size:64px;line-height:96px;letter-spacing:.5px;color:#fff}
+.sale-container{display:flex;justify-content:center;max-width:1290px;width:100%;margin:0 auto}
+.sale-block{display:flex;justify-content:center;filter:drop-shadow(0px 10px 25px rgba(102,102,102,0.15));margin-top:-92px;font-family:'Poppins',sans-serif;background-color:#eeeded;border-radius:5px}
+.sale-block__item{width:100%;position:relative;height:358px}
+.sale-block__img{width:100%;height:100%}
+.sale-block__bag-position{position:absolute;left:10%;top:8%;text-transform:uppercase;width:202px;z-index:1}
+.sale-block__hstyle{font-weight:700;font-size:20px;line-height:30px;letter-spacing:.5px;color:#223263}
+.sale-block__old-price{font-weight:400;font-size:18px;line-height:27px;letter-spacing:.5px;text-decoration-line:line-through;color:#9098B1}
+.sale-block__design{font-weight:700;font-size:18px;line-height:27px;letter-spacing:.5px;color:#FB7181;display:flex;column-gap:8px}
+.bag-position{position:absolute;left:10%;bottom:18%}
+.sale-block__product-position{position:absolute;left:10%;top:8%;width:178px;z-index:1}
+.sneaker-position{position:absolute;left:31%;top:86%;z-index:1}
+.sneaker-position p{font-weight:700}
+.sale-block__placement{position:absolute;left:10%;top:8%;width:178px}
+.another-sneaker-position{position:absolute;left:14%;top:30%}
+.sale-block__new-price{font-family:'Raleway',sans-serif;font-weight:700;font-size:30px;line-height:54px;letter-spacing:.5px;color:#40BFFF}
+.new-price-position{position:absolute;left:65%;top:78%}
+.new-price-place{position:absolute;left:63%;top:7%}
+.new-price-location{position:absolute;left:62%;top:81%}
+.container{width:100%;max-width:1290px;margin:0 auto}
+.tabs-container{display:flex;flex-direction:column;font-family:'Poppins',sans-serif;margin-top:64px}
+.card{border-radius:0 0 5px 5px;border:none;height:100%;transition:all 100ms ease-in-out}
+.card-hot{position:relative}
+.card-hot:before{content:'HOT';position:absolute;z-index:25;top:0;left:0;width:64px;height:33px;background-color:#FF4858;color:#FFF;display:flex;align-items:center;justify-content:center}
+.card .card__img{position:relative;background-color:#F6F7F8;height:100%}
+.card .card__img-darker{background-color:#e4e5e9}
+.card-body{padding:15px 0;border-width:0 3px 3px;border-color:#F6F7F8;border-style:solid;border-radius:0 0 5px 5px}
+.card-text{text-align:center}
+.card__item-name{font-weight:700;font-size:18px;line-height:27px;letter-spacing:.5px;color:#223263;margin-top:15px}
+.hover-block{position:absolute;width:278px;height:219px;background-color:rgba(255,255,255,0.95);left:50%;transform:translate(-50%,0);top:25px;display:flex;justify-content:center;transition:all 300ms ease-in-out;opacity:0}
+.buttons-cover{display:flex;align-items:center;column-gap:10px}
+.buttons-cover button{display:flex;align-items:center;border:2px solid rgba(129,196,255,0.15);border-radius:50%;padding:16px 17px}
+.buttons-cover button svg{width:19px;fill:#33a0ff;transition:all 100ms ease-in-out}
+.buttons-cover button svg:hover{fill:#7e8387}
+.card:hover .hover-block,.card:focus .hover-block{opacity:1}
+.simple-rating{display:flex;column-gap:13px;justify-content:center;padding:6px 0}
+.card__new-price{font-weight:700;font-size:18px;line-height:32px;letter-spacing:.5px;color:#40BFFF}
+.card__old-price{font-weight:400;font-size:14px;line-height:21px;letter-spacing:.5px;text-decoration-line:line-through;color:#9098B1}
+.card__discount{font-weight:700;font-size:14px;line-height:21px;letter-spacing:.5px;color:#FB7181}
+.row_mrgin{margin-bottom:30px}
+.title{font-family:'Poppins',sans-serif;text-align:center;text-transform:uppercase;font-weight:600;font-size:35px;line-height:52px;color:#22262A}
+.title-best-seller{padding-right:60px;margin-bottom:26px}
+.nav-tabs{border:none;justify-content:center;column-gap:70px;margin-bottom:23.5px}
+.tab-controls{position:relative;border:none;font-weight:400;font-size:22px;line-height:33px;color:#262626;border-color:transparent;background-color:transparent}
+.tab-controls:hover{color:#33A0FF;border-color:transparent}
+.tab-controls:after{content:'';position:absolute;display:none;width:100%;height:3px;left:50%;transform:translate(-50%,0);top:30px;background:#33A0FF}
+.tab-controls:hover:after{display:block}
+.tab__load-more{display:flex;justify-content:center;margin-top:13px}
+.tab__load-more__link{font-family:'Poppins',sans-serif;position:relative;font-weight:500;text-transform:uppercase;font-size:20px;line-height:30px;color:#33A0FF}
+.tab__load-more__link:hover{color:#2575ba}
+.tab__load-more__link:after{content:'';position:absolute;top:28px;left:0;background-color:#33A0FF;width:115px;height:3px}
+.tab__load-more__link:hover:after{background-color:#2575ba}
+.middle-banner{position:relative;background-color:#40BFFF;width:100%;min-height:600px;margin-top:92px;display:flex}
+.middle-banner__inner{font-family:'Poppins',sans-serif;display:flex;flex-direction:column;margin-top:162px;margin-left:110px}
+.middle-banner__heading{width:571px;font-weight:500;font-size:55px;line-height:82px;color:#FFF}
+.middle-banner__descript{font-weight:400;font-size:24px;line-height:36px;color:#FFF;padding-top:29px}
+.middle-banner__shop-link{position:relative;font-weight:600;text-transform:uppercase;font-size:20px;line-height:30px;color:#FFF;padding-top:11px;width:118px;transition:all 200ms ease-in-out}
+.middle-banner__shop-link:hover{color:#FFF;text-shadow:1px 1px #fff}
+.middle-banner__shop-link:after{content:'';position:absolute;background:#FFF;width:75px;height:3px;top:45px;left:0;transition:all 200ms ease-in-out}
+.middle-banner__shop-link:hover:after{width:110px}
+.middle-banner__item{position:absolute;top:-15.5%;left:46%}
+.services-container{width:100%;max-width:1290px;margin:0 auto;margin-top:101px;font-family:'Poppins',sans-serif}
+.services{display:flex;margin-left:82px}
+.services__description{display:flex;align-items:flex-start}
+.services__description__refund{margin-left:251px}
+.services__description__support{margin-left:239px}
+.services__description-style{display:flex;flex-direction:column;max-width:200px;align-items:center}
+.services__description__shipping-img{margin-bottom:54px}
+.services__description__refund-img{margin-bottom:39px}
+.services__description__support-img{margin-bottom:28px}
+.services__description-style h3{text-transform:uppercase;font-weight:500;font-size:27px;line-height:40px;color:#22262A;margin-bottom:5px}
+.services__description-style p{font-family:'Proxima Nova',sans-serif;font-weight:400;font-size:18px;line-height:22px;text-align:center;color:#22262A}
+.news-container{width:100%;max-width:1290px;margin:0 auto;margin-top:134px}
+.latest-news-row{display:flex;justify-content:space-between;margin-top:72px}
+.latest-news-col{display:flex}
+.latest-news-col-padding{padding-right:38px}
+.latest-news-col__log-nike{padding-right:35px;padding-left:34px}
+.latest-news-col__log-figma{padding-right:11px;margin-left:8px}
+.latest-news-col__log-kronos{padding-right:22px}
+.latest-news-col__details{display:flex;flex-direction:column}
+.latest-news-col__date{font-family:'Poppins',sans-serif;font-weight:500;font-size:18px;line-height:27px;color:#C1C8CE}
+.latest-news-col__details h3{font-family:'Poppins',sans-serif;font-weight:600;font-size:22px;line-height:33px;color:#22262A}
+.latest-news-col__text{font-family:'Proxima Nova',sans-serif;font-weight:100;font-size:18px;line-height:22px;color:#22262A;width:200px}
+.products-section{width:100%;max-width:1290px;margin:0 auto;margin-top:120px}
+.title-featured{padding-left:10px}
+.featured-products-row{display:flex;margin-top:73px}
+.featured-products-col{display:flex}
+.featured-products-col-middle{margin-left:57px}
+.featured-products-col-last{margin-left:57px}
+.featured-products-image1{padding-right:23px;margin-left:6px}
+.featured-products-image2{padding-right:23px}
+.featured-products-image3{padding-right:23px}
+.featured-products-col__right{display:flex;flex-direction:column}
+.featured-products-col__right h4{font-family:'Proxima Nova',sans-serif;font-weight:400;font-size:22px;line-height:27px;color:#262626;width:200px;margin-bottom:16px}
+.featured-products__rating{display:flex;column-gap:5px;width:100%;margin-bottom:17px}
+.featured-products__prices{font-family:'Poppins',sans-serif;display:flex;column-gap:4px;align-items:baseline}
+.featured-products__new-price{font-weight:500;font-size:20px;line-height:30px;color:#FF4858}
+.featured-products__old-price{font-weight:400;font-size:20px;line-height:24px;color:#C1C8CE;position:relative}
+.featured-products__old-price:after{content:'';height:1px;background-color:#5D656B;width:48px;top:14px;left:1px;position:absolute}
+.products__search-form{display:flex;justify-content:center;margin-top:125px;width:100%;padding-right:24px}
+.products__search-form input{border-top:2px;border-bottom:2px;border-left:2px;border-right:0;border-style:solid;border-color:#BCDDFE;border-radius:4px 0 0 4px;height:64px;min-width:508px;box-sizing:border-box;transition:.1s}
+.products__search-form input:active,.products__search-form input:focus{box-shadow:inset 0 0 5px #BCDDFE}
+.products__search-form input::placeholder{font-family:'Proxima Nova',sans-serif;font-weight:400;font-size:18px;line-height:22px;color:#262626;opacity:.35}
+.products__search-form input[type="text"]{font-weight:400;font-size:20px;padding:0 21px;outline:none;color:#000;opacity:1}
+.products__btn-search{width:127px;height:64px;background:#40BFFF;border-radius:0 4px 4px 0;font-family:'Poppins',sans-serif;color:#FFF;font-weight:600;font-size:20px;line-height:30px;color:#FFF;transition:all 90ms ease-in-out}
+.products__btn-search:hover{background-color:#039fee}
+footer{background-color:#BCDDFE}
+.footer-container{width:100%;max-width:1290px;margin:0 auto;margin-top:95px;padding-left:28px}
+.footer-container h4{font-family:'Poppins',sans-serif;font-style:normal;font-weight:500;font-size:18px;line-height:27px;color:#22262A}
+.footer-upper__logo{padding-top:147px;padding-right:310px}
+.footer-upper__logo-wrap{display:flex;align-items:center;column-gap:3px;padding-bottom:12px}
+.footer-upper__logo-text{width:220px;font-family:'Poppins',sans-serif;font-weight:100;font-size:12px;line-height:15px;color:#22262A}
+.footer-upper__networks{padding-top:163px;padding-right:189px}
+.footer-upper__networks__text{width:198px;font-family:'Proxima Nova',sans-serif;font-style:normal;font-weight:400;font-size:12px;line-height:15px;color:#22262A;padding:19px 0 23px}
+.footer-upper__address{padding-top:163px}
+.footer-upper__address address{max-width:148px;font-family:'Poppins',sans-serif;font-weight:400;font-size:14px;line-height:21px;color:#22262A;padding-top:19px}
+.footer-upper__networks-icons{display:flex;column-gap:39px;align-items:baseline}
+.footer-upper__about{display:flex}
+.footer-middle{padding-top:65px;padding-bottom:151px;position:relative}
+.footer-middle:after{content:'';position:absolute;height:1.5px;width:95%;background:#F6F7F8;top:77%;left:0}
+.footer-middle__navigation{display:flex;justify-content:space-between;padding-right:75px}
+.footer-middle__navigation h4{padding-bottom:31px}
+.footer-middle__navigation ul li a{font-family:'Poppins',sans-serif;font-weight:100;font-size:14px;line-height:21px;transition:all 200ms ease;color:#262626}
+.footer-middle__navigation ul li a:hover{text-shadow:1px 1px #000}
+.footer-bottom{display:flex;justify-content:space-between;position:relative;bottom:53px;padding:0 72px 0 25px}
+.footer-bottom__copyright p{font-weight:400;font-size:14px;line-height:17px;color:#C1C8CE;padding-top:5px}
+.footer-bottom__payments{display:flex;column-gap:20px}
