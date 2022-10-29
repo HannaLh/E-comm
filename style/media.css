@@ -7,13 +7,12 @@
         column-gap: 37px;
     }
 
-    .header-menu__dropdown {
-        left: 50%;
-	    transform: translate(-50%, 0);
+    .nav__list>li:hover .header-menu__dropdown {
+        opacity: 0;
     }
 
-    .header-menu__dropdown:before {
-        left: 49%;
+    .header-menu__dropdown {
+        display: none;
     }
 
     .promotion-banner {
@@ -55,6 +54,10 @@
 
     .featured-products-col-last {
         margin-left: 0px;
+    }
+
+    .featured-products-col__right h4 {
+        width: 130px;
     }
 
     .services {
@@ -151,6 +154,10 @@
         top: 24px;
         right: 46px;
         z-index: 35;
+    }
+
+    .nav__list>li:hover .header-menu__dropdown {
+        opacity: 1;
     }
 
     .header-menu__dropdown {
@@ -558,7 +565,6 @@
     }
 
     .featured-products-col__right h4 {
-        width: 133px;
         font-size: 15px;
         line-height: 16px;
         margin-bottom: 3px;
