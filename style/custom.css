@@ -690,6 +690,11 @@ select {
     text-transform: uppercase;
     font-size: 20px;
     line-height: 30px;
+    color: #33A0FF;
+}
+
+.tab__load-more__link:hover {
+    color: #2575ba;
 }
 
 .tab__load-more__link:after {
@@ -700,6 +705,10 @@ select {
     background-color: #33A0FF;
     width: 115px;
     height: 3px;
+}
+
+.tab__load-more__link:hover:after {
+    background-color: #2575ba;
 }
 
 .middle-banner {
@@ -743,6 +752,13 @@ select {
     line-height: 30px;
     color: #FFFFFF;
     padding-top: 11px;
+    width: 118px;
+    transition: all 200ms ease-in-out;
+}
+
+.middle-banner__shop-link:hover {
+    color: #FFFFFF;
+    text-shadow: 1px 1px #ffffff;
 }
 
 .middle-banner__shop-link:after {
@@ -753,6 +769,11 @@ select {
     height:3px;
     top: 45px;
     left: 0;
+    transition: all 200ms ease-in-out;
+}
+
+.middle-banner__shop-link:hover:after {
+    width: 110px;
 }
 
 .middle-banner__item {
@@ -1002,12 +1023,17 @@ select {
     border-left: 2px;
     border-right: 0px;
     border-style: solid;
-    border-color: #42a0fe;
+    border-color: #BCDDFE;
     border-radius: 4px 0px 0px 4px;
     height: 64px;
     min-width: 508px;
     box-sizing: border-box;
-    transition: .5s;
+    transition: .1s;
+}
+
+.products__search-form input:active,
+.products__search-form input:focus  {
+    box-shadow: inset 0 0 5px #BCDDFE;
 }
 
 .products__search-form input::placeholder {
@@ -1016,18 +1042,17 @@ select {
     font-size: 18px;
     line-height: 22px;
     color: #262626;
+    opacity: 0.35;
 }
-
 
 .products__search-form input[type="text"]
 {
     font-weight: 400;
     font-size: 20px;
     padding: 0 21px;
-    color: black;
     outline: none;
-
-    opacity: 0.35;
+    color: #000000;
+    opacity: 1;
 }
 
 .products__btn-search {
@@ -1146,9 +1171,7 @@ footer {
     width: 95%;
     background: #F6F7F8;
     top: 77%;
-    left: 50%;
-	transform: translate(-50%, 0);
-    text-align: center;
+    left: 0;
 }
 
 .footer-middle__navigation {
@@ -1166,12 +1189,12 @@ footer {
     font-weight: 100;
     font-size: 14px;
     line-height: 21px;
-
+    transition: all 200ms ease;
     color: #262626;
 }
 
 .footer-middle__navigation ul li a:hover {
-    text-shadow: 2px 2px #000000;
+    text-shadow: 1px 1px #000000;
 }
 
 .footer-bottom {
