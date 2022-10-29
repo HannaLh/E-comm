@@ -13,18 +13,15 @@ body {
     width: 10px;
 }
 
-  /* Track */
 ::-webkit-scrollbar-track {
     background-color: #FFFFFF;
 }
 
-  /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 15px;
 }
 
-  /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(96, 96, 96); 
 }
@@ -188,7 +185,7 @@ select {
 }
 
 .header-menu__nav {
-    padding-right: 40px;
+    padding-right: 32px;
 }
 
 .header-menu__logo {
@@ -635,6 +632,10 @@ select {
     font-size: 35px;
     line-height: 52px;
     color: #22262A;
+}
+
+.title-best-seller {
+    padding-right: 60px;
     margin-bottom: 26px;
 }
 
@@ -677,19 +678,28 @@ select {
 	display: block;
 }
 
-.tab__load-more-link {
+.tab__load-more {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
+    margin-top: 13px;
 }
 
-.tab__load-more {
+.tab__load-more__link {
+    position: relative;
     font-weight: 500;
     text-transform: uppercase;
-    text-decoration: underline;
     font-size: 20px;
     line-height: 30px;
-    color: #33A0FF;
+}
+
+.tab__load-more__link:after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: #33A0FF;
+    width: 115px;
+    height: 3px;
 }
 
 .middle-banner {
@@ -755,7 +765,7 @@ select {
     width: 100%;
     max-width: 1290px;
 	margin: 0 auto;
-    margin-top: 102px;
+    margin-top: 101px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -819,7 +829,7 @@ select {
     max-width: 1290px;
 	margin: 0 auto;
 
-    margin-top: 121px;
+    margin-top: 134px;
 }
 
 .latest-news-row {
@@ -832,12 +842,18 @@ select {
     display: flex;
 }
 
+.latest-news-col-padding {
+    padding-right: 38px;
+}
+
 .latest-news-col__log-nike {
     padding-right: 35px;
+    padding-left: 34px;
 }
 
 .latest-news-col__log-figma {
     padding-right: 11px;
+    margin-left: 8px;
 }
 
 .latest-news-col__log-kronos {
@@ -867,7 +883,7 @@ select {
 
 .latest-news-col__text {
     font-family: 'Proxima Nova', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 18px;
     line-height: 22px;
     color: #22262A;
@@ -879,18 +895,41 @@ select {
     max-width: 1290px;
 	margin: 0 auto;
 
-    margin-top: 110px;
+    margin-top: 120px;
+}
+
+.title-featured {
+    padding-left: 10px;
 }
 
 .featured-products-row {
     display: flex;
-    justify-content: space-between;
-    margin-top: 55px;
+    margin-top: 73px;
 }
 
 .featured-products-col {
     display: flex;
-    column-gap: 25px;
+}
+
+.featured-products-col-middle {
+    margin-left: 57px;
+}
+
+.featured-products-col-last {
+    margin-left: 57px;
+}
+
+.featured-products-image1 {
+    padding-right: 23px;
+    margin-left: 6px;
+}
+
+.featured-products-image2 {
+    padding-right: 23px;
+}
+
+.featured-products-image3 {
+    padding-right: 23px;
 }
 
 .featured-products-col__right {
@@ -1018,6 +1057,7 @@ footer {
     max-width: 1290px;
 	margin: 0 auto;
     margin-top: 95px;
+    padding-left: 28px;
 }
 
 .footer-container h4 {
@@ -1030,28 +1070,28 @@ footer {
 }
 
 .footer-upper__logo {
-    padding-top: 150px;
-    padding-right: 308px;
+    padding-top: 147px;
+    padding-right: 310px;
 }
 
 .footer-upper__logo-wrap {
     display: flex;
     align-items: center;
-    column-gap: 7px;
-    padding-bottom: 16px;
+    column-gap: 3px;
+    padding-bottom: 12px;
 }
 
 .footer-upper__logo-text {
     width: 220px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 12px;
     line-height: 15px;
 
     color: #22262A;
 }
 .footer-upper__networks {
-    padding-top: 161px;
+    padding-top: 163px;
     padding-right: 189px;
 }
 
@@ -1069,7 +1109,7 @@ footer {
 }
 
 .footer-upper__address {
-    padding-top: 161px;
+    padding-top: 163px;
 }
 
 .footer-upper__address address {
@@ -1094,8 +1134,8 @@ footer {
     display: flex;
 }
 .footer-middle {
-    padding-top: 70px;
-    padding-bottom:179px;
+    padding-top: 65px;
+    padding-bottom:151px;
     position: relative;
 }
 
@@ -1114,18 +1154,24 @@ footer {
 .footer-middle__navigation {
     display: flex;
     justify-content: space-between;
+    padding-right: 75px;
 }
 
 .footer-middle__navigation h4 {
-    padding-bottom: 25px;
+    padding-bottom: 31px;
 }
 
 .footer-middle__navigation ul li a {
     font-family: 'Poppins', sans-serif;
+    font-weight: 100;
     font-size: 14px;
     line-height: 21px;
 
     color: #262626;
+}
+
+.footer-middle__navigation ul li a:hover {
+    text-shadow: 2px 2px #000000;
 }
 
 .footer-bottom {
@@ -1133,7 +1179,7 @@ footer {
     justify-content: space-between;
     position: relative;
     bottom: 53px;
-    padding: 0px 55px 0px 17px
+    padding: 0px 72px 0px 25px;
 }
 
 .footer-bottom__copyright p {
@@ -1141,6 +1187,7 @@ footer {
     font-size: 14px;
     line-height: 17px;
     color: #C1C8CE;
+    padding-top: 5px;
 }
 
 .footer-bottom__payments {
