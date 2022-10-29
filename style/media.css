@@ -45,6 +45,18 @@
         width: auto;
     }
 
+    .featured-products-row {
+        justify-content: space-between;
+    }
+
+    .featured-products-col-middle {
+        margin-left: 0px;
+    }
+
+    .featured-products-col-last {
+        margin-left: 0px;
+    }
+
     .services {
         justify-content: center;
         margin-left: 0px;
@@ -62,7 +74,24 @@
         column-gap: 103px;
         flex-wrap: wrap;
     }
-    
+
+    .latest-news-row {
+        justify-content: space-around;
+    }
+
+    .latest-news-col {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .latest-news-col__details {
+        padding-top: 30px;
+    }
+
+    .latest-news-col__log-nike {
+        padding: 20px 35px 14px 34px;
+    }
+
     .footer-container {
         padding: 0 100px;
         display: flex;
@@ -80,6 +109,11 @@
 
     .footer-upper__networks {
         padding-right: 0px;
+    }
+
+    .footer-middle__navigation {
+        padding-right: 0px;
+        justify-content: space-between;
     }
 }
 
@@ -128,10 +162,6 @@
         font-size: 41px;
         line-height: 51px;
         left: 57px;
-    }
-
-    .news-container {
-        display: none;
     }
 
     .header-menu__bottom {
@@ -215,12 +245,18 @@
     .container {
         width: 78%;
     }
+
+    .news-container {
+        display: none;
+    }
 }
 
 @media (max-width: 804px) {
     .container {
         width: 90%;
     }
+
+    
 }
 
 @media (max-width: 709px) {
@@ -257,10 +293,6 @@
 
     .container {
         width: 44%;
-    }
-
-    .nav-tabs {
-        column-gap: 20px;
     }
 
     .tab-controls {
